@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:i_sellers/widgets/pages/usuarios/add_user_page.dart';
+import 'package:i_sellers/widgets/pages/vendas/listar_vendas_page.dart';
+
 //comentario
 
 void main() {
@@ -15,6 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      routes: {
+        '/': (context) => ListarVendasPage()
+      }
     );
   }
 }
